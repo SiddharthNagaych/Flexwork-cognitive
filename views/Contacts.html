@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">    
+</head>
+<body>
+  <header>
+    <nav class="flex items-center p-4 justify-between">      
+        <div class="text-lg">Logo</div>
+        <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Home</a>
+            <a href="services.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Services</a>
+            <a href="products.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Products</a>
+            <a href="intern.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Internships</a>
+            <a href="jobs.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Jobs</a>
+            <a href="verification.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Verification</a>
+            <a href="about.html" class="rounded hover:bg-slate-100 hover:text-blue-600">About Us</a>
+            <a href="Contacts.html" class="rounded hover:bg-slate-100 hover:text-blue-600">Contact Us</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-button" class="text-black focus:outline-none">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="menu"  class="hidden flex flex-col items-center bg-blue-500 text-white space-y-4 p-4">
+        <a href="index.html" class="rounded hover:bg-slate-100 hover:text-black">Home</a>
+        <a href="services.html" class="rounded hover:bg-slate-100 hover:text-black">Services</a>
+        <a href="products.html" class="rounded hover:bg-slate-100 hover:text-black">Products</a>
+        <a href="intern.html" class="rounded hover:bg-slate-100 hover:text-black">Internships</a>
+        <a href="jobs.html" class="rounded hover:bg-slate-100 hover:text-black">Jobs</a>
+        <a href="verification.html" class="rounded hover:bg-slate-100 hover:text-black">Verification</a>
+        <a href="about.html" class="rounded hover:bg-slate-100 hover:text-black">About Us</a>
+        <a href="Contacts.html" class="rounded hover:bg-slate-100 hover:text-black">Contact Us</a>
+    </div>
+</header>
+    <div id="form" class="max-w-md mx-auto p-4 pt-6 md:p-6 lg:p-12">
+        <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+        <form>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                Name*
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="name" type="text" required>
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="last-name">
+                Last name
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="last-name" type="text" required>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                Your email*
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="email" type="email" required>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                Message*
+              </label>
+              <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="message" required></textarea>
+            </div>
+          </div>
+          <div class="md:flex md:items-center">
+            <button class="shadow bg-green-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    <footer class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 text-gray-800">
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="font-bold text-xl mb-4">Useful Links</h2>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:underline">Home</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Services</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Internships</a></li>
+                    </ul>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h2 class="font-bold text-xl mb-4">Legal Links</h2>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:underline">Privacy policy</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Refund policy</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h2 class="font-bold text-xl mb-4">Contact Info</h2>
+                    <p>Noida Sector-12 Banglore</p>
+                    <a href="mailto:flexworkcognitive@gmail.com" class="hover:underline">contactflexwork.in</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <h2 class="font-bold text-xl mb-4">Follow Us</h2>
+                <div class="flex justify-center mb-4">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-instagram-line ri-lg"></i>
+                    </a>
+                    <a href="mailto:contact@codsoft.in" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-mail-line ri-lg"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-linkedin-line ri-lg"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-telegram-line ri-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                Copyright © 2024 FLEXWORK COGNITIVE. All Rights Reserved Designed By Team FLEXWORK COGNITIVE
+            </div>
+        </div>
+    </footer>
+    <script src="/public/main.js"></script>
+
+</body>
